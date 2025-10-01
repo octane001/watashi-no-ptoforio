@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: grid;
+  height: 700px;
+  width: 1500px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+
+.box {
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-family: Arial, sans-serif;
+
+  /* 🔑 Shared background rules */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Individual positioning + images */
+.one {
+  grid-row: 1 / 3;
+  background-image: url("./Assets1/IMG_20220814_130548_409.jpg");
+}
+
+.two {
+  grid-row: 3 / 5;
+  background-image: url("./Assets1/IMG_20231014_183835_352.jpg");
+}
+
+.three {
+  grid-column: 2 / 4;
+  background-image: url("./Assets1/IMG_20230423_091131.jpg");
+}
+
+.four {
+  grid-column: 4 / 6;
+  background-image: url("./Assets1/PXL_20230106_112753-01.jpeg");
+}
+
+.five {
+  grid-row: 2 / 4;
+  background-image: url("./Assets1/PiyushKumar_29_01.jpeg");
+}
+
+.six {
+  grid-column: 3 / 5;
+  grid-row: 2 / 4;
+  background-image: url("./Assets1/PXL_20230401_140241.PORTRAIT.jpg");
+}
+
+.seven {
+  grid-column: 5 / 6;
+  grid-row: 2 / 5;
+  background-image: url("./Assets1/PXL_20240203_130908026-01.jpeg");
+}
+
+.eight {
+  grid-column: 2 / 4;
+  background-image: url("./Assets1/PXL_20230315_155059.jpg");
+}
+
+.nine {
+  background-image: url("./Assets1/PXL_20230304_141549.PORTRAIT.jpg");
+}
