@@ -1,3 +1,6 @@
+/* ------------------------ */
+/* ✅ ORIGINAL DESKTOP CSS (unchanged) */
+/* ------------------------ */
 * {
   margin: 0;
   padding: 0;
@@ -84,7 +87,7 @@ body {
 
 /* Box-specific colors */
 .box1 {
-  background-color: #FDFFB8;
+  background-color: #00FF9C;
 }
 
 .box1 img {
@@ -94,7 +97,7 @@ body {
 }
 
 .box2 {
-  background-color: #FDFFB8;
+  background-color: #8C00FF;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,11 +105,11 @@ body {
 }
 
 .box3 {
-  background-color: #a855f7;
+  background-color: #FFD000;
 }
 
 .box4 {
-  background-color: #00fff2;
+  background-color: #CCFF00;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
@@ -115,7 +118,7 @@ body {
 }
 
 .box5 {
-  background-color: #008cff;
+  background-color: #ff006a;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -137,21 +140,21 @@ body {
 }
 
 .box6 {
-  background-color: #22c55e;
+  background-color: #00FFD4;
   display: flex;
   flex-direction: column;
   padding: 10px 0;
 }
 
 .box7 {
-  background-color: #ff3f33;
+  background-color: #C100FF;
   display: flex;
   flex-direction: column;
   padding: 10px 0;
 }
 
 .box8 {
-  background-color: #fff5f2;
+  background-color: #EEFF00;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,7 +162,7 @@ body {
 }
 
 .box9 {
-  background-color: #00ffaa;
+  background-color: #00FF80;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -167,7 +170,7 @@ body {
 }
 
 .box10 {
-  background-color: #fffc36;
+  background-color: #0047FF;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -281,5 +284,137 @@ a:focus-visible {
   
   .box:hover {
     transform: none;
+  }
+}
+
+
+/* ------------------------ */
+/* ✅ MOBILE RESPONSIVENESS (Updated as per request) */
+/* ------------------------ */
+@media (max-width: 1024px) {
+  body {
+    cursor: auto; /* Disable custom cursor for mobile/tablet */
+  }
+
+  .cursor-dot,
+  .cursor-outline {
+    display: none;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+  }
+
+  /* 📌 Reorder elements */
+  .box5 { order: 1; } /* Myself section first */
+  .box2 { order: 2; }
+  .box3 { order: 3; }
+  .box4 { order: 4; }
+  .box6 { order: 5; }
+  .box7 { order: 6; }
+  .box8 { order: 7; }
+  .box9 { order: 8; }
+  .box10 { order: 9; }
+  .box1 { order: 10; } /* Cat gif moved to bottom */
+
+  .box5 {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .box5 h1 {
+    font-size: 2rem;
+  }
+
+  .box5 p {
+    font-size: 0.95rem;
+  }
+
+  #profile-img {
+    width: 80%;
+    height: auto;
+  }
+
+  .p-i-container,
+  .cp-container,
+  .lang-containers,
+  .contact-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .p-icons,
+  .p-icons-project {
+    height: 60px;
+  }
+
+  h4 {
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+
+  .box2,
+  .box4,
+  .box6,
+  .box7,
+  .box8,
+  .box9,
+  .box10 {
+    padding: 15px 0;
+  }
+
+  .box4 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .contact-container i {
+    font-size: 2.5rem;
+  }
+
+  .main-container > .box + .box {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .box5 h1 {
+    font-size: 1.75rem;
+  }
+
+  .box5 h2 {
+    font-size: 1.2rem;
+  }
+
+  .box5 p {
+    font-size: 0.9rem;
+  }
+
+  #profile-img {
+    width: 90%;
+  }
+
+  .p-icons,
+  .p-icons-project {
+    height: 50px;
+  }
+
+  .contact-container i {
+    font-size: 2rem;
+  }
+
+  .box {
+    min-height: 250px;
   }
 }
