@@ -88,6 +88,7 @@ body {
 /* Box-specific colors */
 .box1 {
   background-color: #00FF9C;
+  background-color: #00FF9C;
 }
 
 .box1 img {
@@ -98,6 +99,7 @@ body {
 
 .box2 {
   background-color: #8C00FF;
+  background-color: #8C00FF;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,9 +108,11 @@ body {
 
 .box3 {
   background-color: #FFD000;
+  background-color: #FFD000;
 }
 
 .box4 {
+  background-color: #CCFF00;
   background-color: #CCFF00;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -118,6 +122,7 @@ body {
 }
 
 .box5 {
+  background-color: #ff006a;
   background-color: #ff006a;
   display: flex;
   align-items: center;
@@ -141,6 +146,7 @@ body {
 
 .box6 {
   background-color: #00FFD4;
+  background-color: #00FFD4;
   display: flex;
   flex-direction: column;
   padding: 10px 0;
@@ -148,12 +154,14 @@ body {
 
 .box7 {
   background-color: #C100FF;
+  background-color: #C100FF;
   display: flex;
   flex-direction: column;
   padding: 10px 0;
 }
 
 .box8 {
+  background-color: #EEFF00;
   background-color: #EEFF00;
   display: flex;
   flex-direction: column;
@@ -163,6 +171,7 @@ body {
 
 .box9 {
   background-color: #00FF80;
+  background-color: #00FF80;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,6 +179,7 @@ body {
 }
 
 .box10 {
+  background-color: #0047FF;
   background-color: #0047FF;
   display: flex;
   flex-direction: column;
